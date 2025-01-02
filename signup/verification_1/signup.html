@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Novus-Bank</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../../src/logo/logo 1.svg" alt="logo" /></div>
+        <a href="../../login/login.html"><button id="login">Login</button></a>
+    </div>
+    <div class="container_box">
+        <div class="container_progressbar">
+            <div class="onboarding_text">Signing up for Online Banking</div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="steps">
+                    <div class="step active">Identification</div>
+                    <div class="step">Verification</div>
+                    <div class="step">Creation</div>
+                    <div class="step">Success</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="main_left_item">
+                <p>Tell us about your basic details and account requirements</p>
+                <form id="verificationForm">
+                    <label for="verificationProcess">Choose a verification process
+                        <span class="required">*</span></label>
+                    <select id="verificationProcess" required>
+                        <option value="">Select</option>
+                        <option value="otp_mobile">OTP on your mobile number</option>
+                        <option value="otp_email">OTP on your email</option>
+                    </select>
+
+                    <label for="otpInput">Enter your OTP <span class="required">*</span></label>
+                    <input type="text" id="otpInput" placeholder="Enter your OTP" required />
+
+                    <label for="verificationMethod">How would you like to verify?
+                        <span class="required">*</span></label>
+                    <select id="verificationMethod" required>
+                        <option value="">Select</option>
+                        <option value="passport">Passport</option>
+                        <option value="id_card">ID Card</option>
+                        <option value="driver_license">Driver's License</option>
+                    </select>
+
+                    <div class="upload-container">
+                        <label for="fileUpload">Attach your identity documents <span class="required">*</span></label>
+                        <div class="drop-zone" id="dropZone">
+                          <p>Drag and drop a file</p>
+                          <input type="file" id="fileUpload" class="file-input" accept=".jpg, .jpeg, .png, .pdf" />
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" id="backButton" class="button">Back</button>
+                        <button type="submit" class="button primary">Continue</button>
+                    </div>
+                </form>
+            </div>
+            <div class="main_right_item">
+                <div class="benefits">
+                    <h3>Benefits of Online Banking</h3>
+                    <ul>
+                        <li>
+                            Check recent account activity and access account balances from
+                            one convenient location.
+                        </li>
+                        <li>
+                            Transfer funds between your Novus accounts and accounts at other
+                            banks.
+                        </li>
+                        <li>Go paperless with up to 25 months of deposit statements.</li>
+                    </ul>
+                    <a href="#" class="read-more">more</a>
+                </div>
+                <div class="assistance">
+                    <h3>Need Assistance?</h3>
+                    <div class="assistant-text">
+                        For Online Banking technical assistance, Bill Pay support, or
+                        general account inquiries
+                    </div>
+                    <p><strong>Call 1-877-768-2265.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="copyright">
+            &copy; All Rights Reserved. Bacancy Technologies
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Use</a> |
+            <a href="#">Cookies Policy</a> |
+            <a href="#">Legal Statement</a> |
+            <a href="#">Careers</a> |
+            <a href="#">Corporate Social Responsibility</a>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
